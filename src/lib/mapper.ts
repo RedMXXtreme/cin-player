@@ -1,5 +1,5 @@
-const M3U8_PROXY = "https://cin-m3u8-proxy-production.up.railway.app/m3u8-proxy?url=";
-const MAPPER_BASE = "https://zero-mapper.vercel.app";
+const M3U8_PROXY = "";
+const MAPPER_BASE = "";
 
 export type ServerName = "megacloud" | "upcloud";
 
@@ -74,4 +74,5 @@ export async function getTVSources(
 
 export async function getMovieSources(id: string): Promise<MapperResponse> {
   return fetchMapper(`/movie/${id}`);
+
 }
